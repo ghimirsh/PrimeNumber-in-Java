@@ -25,4 +25,7 @@ public class Prime {
         return result;
 
     }
+    public void generatePrimeSeries(int number){
+        
+    }
 }

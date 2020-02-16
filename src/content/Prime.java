@@ -26,6 +26,21 @@ public class Prime {
 
     }
     public void generatePrimeSeries(int number){
-        
+        for(int num = 2; num <= number; num++){
+            int i;
+            boolean result = true;
+            for(i = 2; i < num; i++){
+                if(num % i == 0){
+                    result = false;
+                    break;
+                }
+            }
+            if(i == num){
+                result = true;
+            }
+            if(result){
+                System.out.println(num + " ");
+            }
+        }
     }
 }

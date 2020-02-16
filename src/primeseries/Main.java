@@ -19,15 +19,21 @@ public class Main {
      */
     public static void main(String[] args) {
         Scanner scanner  = new Scanner(System.in);
-        System.out.println("Enter a number : ");
-        int number = scanner.nextInt();
-        Prime one = new Prime();
-        if(one.checkPrime(number)){
-            System.out.println("Yes, " + number + " is a prime number.");
-        }
-        else{
-            System.out.println("No, " + number + " is not a prime number");
-        }
+//        System.out.println("Enter a number : ");
+         Prime one = new Prime();
+        int number;
+//        number = scanner.nextInt();
+//       
+//        if(one.checkPrime(number)){
+//            System.out.println("Yes, " + number + " is a prime number.");
+//        }
+//        else{
+//            System.out.println("No, " + number + " is not a prime number");
+//        }
+        System.out.println("Enter the upper limit for the prime series : ");
+        number = scanner.nextInt();
+        System.out.println("The prime series up to ");
+        one.generatePrimeSeries(number);
     }
     
 }

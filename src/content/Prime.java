@@ -39,8 +39,9 @@ public class Prime {
                 result = true;
             }
             if(result){
-                System.out.println(num + " ");
+                System.out.print(num + " ");
             }
         }
+        System.out.println("");
     }
 }

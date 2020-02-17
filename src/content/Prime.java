@@ -25,6 +25,7 @@ public class Prime {
         return result;
 
     }
+    //generates the series of prime number up to given number by the user at run time
     public void generatePrimeSeries(int number){
         for(int num = 2; num <= number; num++){
             int i;
